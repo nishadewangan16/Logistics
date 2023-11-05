@@ -35,5 +35,23 @@ namespace Logistic.Controllers
 
             return View();
         }
+        public ActionResult SignUp()
+        {
+            ViewBag.Message = "Your SignUp page.";
+
+            return View();
+        }
+        public ActionResult ForgotPassword()
+        {
+            ViewBag.Message = "Your ForgotPassword page.";
+
+            return View();
+        }
+        public ActionResult TrackOrder()
+        {
+            ViewBag.Message = "Your TrackOrder page.";
+
+            return View();
+        }
     }
 }

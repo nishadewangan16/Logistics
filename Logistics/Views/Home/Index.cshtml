@@ -1,8 +1,116 @@
-﻿@{ ViewBag.Title = "Home Page"; }
+﻿
+@{ ViewBag.Title = "Home Page"; }
 
 <div style="padding-top:100px;">
-    <h1>Index Page</h1>
+    <h1></h1>
 </div>
-@section Index{
-    <h1>I am from Index Section</h1>
+@section SignUp{
+    <h1></h1>
 }
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: blue;
+        }
+
+        .login-container {
+            max-width: 450px;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            height: 550px;
+        }
+
+        .divider:after,
+        .divider:before {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #eee;
+        }
+             
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        main {
+            display: flex;
+            border: 1px;
+            height: calc(100vh-100px);
+            justify-content: center;
+        }
+
+        .bike-img {
+            width: 600px;
+            height: 400px;
+        }
+
+        .content-left {
+            width: 30%;
+        }
+
+        main h1 {
+            font-size: 54px;
+            color: #133B4F;
+            text-transform: uppercase;
+        }
+
+        main h2 {
+            font-size: 25px;
+            color: #FCA70C;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+        }
+
+        main p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #333;
+            line-height: 31.5px;
+            margin: 30px 0;
+        }
+
+        .cta {
+            padding: 15px 30px;
+            background-color: #C4c4f7;
+            outline: none;
+            border: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="content-left">
+            <h1>Digital</h1>
+            <h2>Marketing</h2>
+            <p>write here about your company</p>
+            <button class="cta">Learn More</button>
+        </div>
+        <div class="content-right">
+            <img src="~/img/fontimg1.jpg" class="bike-img" />
+        </div>
+    </main>
+
+    
+</body>
+</html>

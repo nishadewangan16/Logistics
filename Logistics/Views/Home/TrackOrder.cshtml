@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "TrackOrder";
+}
+
+<h2>TrackOrder</h2>
+
+@Section TrackOrder
+{
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-image: url('../../Images/Home/SignupImg.jpg');
+        }
+
+        .login-container {
+            max-width: 450px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            height: 500px;
+        }
+
+        p {
+            background-color: aquamarine;
+            text-align: center;
+            padding: 8px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .divider:after,
+        .divider:before {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2 class="text-center">Forgot Password</h2>
+            <p> Please Create a new password that you don't use on any other site</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="username" placeholder="Create new password">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="password" placeholder="Confirm new password">
+                </div>
+
+
+
+                <a class="btn btn-primary btn-lg btn-block" href="/Home/Login" role="button">Register</a>
+
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+} 
